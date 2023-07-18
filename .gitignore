@@ -1,0 +1,12 @@
+# .gitignore
+
+# Python virtual environment directory
+venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# If using Jupyter notebook
+.ipynb_checkpoints/
