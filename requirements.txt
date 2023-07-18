@@ -4,4 +4,4 @@ nltk
 scikit-learn
 flask
 langdetect
-google-cloud-translate
+translators
