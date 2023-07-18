@@ -46,15 +46,18 @@ The service exposes two main endpoints:
 This endpoint trains the model using the data from `spam_randomForest.csv` and saves the trained model. There is no need to provide any data to this endpoint.
 
 Example:
+```
 curl -X GET http://localhost:5001/train
-
+```
 
 ### `/predict` (POST)
 
 This endpoint makes a prediction based on the message provided in the POST request.
 
 Example:
+```
 curl -X POST -H "Content-Type: application/json" -d '{"message": "Hey, are we still on for dinner tonight?"}' http://localhost:5001/predict
+```
 
 
 The service will respond with a prediction of either "ham" or "spam".
