@@ -8,8 +8,8 @@ class Predictor:
         self.classifier.load_model(model_path)
 
     def translate_to_english(self, text):
-        if detect(text) != 'en':
-            translated_text = ts.translate_text(text)  # translate to English
+        if detect(text) != 'en':            
+            translated_text = ts.translate_text(text)  # translate to English                
             return translated_text
         else:
             return text
