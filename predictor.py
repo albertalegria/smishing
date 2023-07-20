@@ -42,6 +42,8 @@ class Predictor:
         return ', '.join(valid_numbers) if valid_numbers else ''
     
     def predict(self, message):
+        # Escape single quotes                
+        message = message.replace("'", "\\'")
         translated_message = self.translate_to_english(message)
         prediction = self.classifier.predict(translated_message)
         malicious_url = self.extract_url(message)
