@@ -21,8 +21,7 @@ class Predictor:
         urls = re.findall(url_regex, text)
         return ', '.join(urls) if urls else ''
 
-    def extract_phone_number(self, text):
-        #phone_regex = r'\+?\d[\d\-\.\s]+'
+    def extract_phone_number(self, text):        
         phone_regex = r'\+?\d[\d\-]*\d'
         possible_numbers = re.findall(phone_regex, text)
         valid_numbers = []
